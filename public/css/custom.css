@@ -1,0 +1,98 @@
+.canvas {
+position: absolute;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100%;
+background: url("../img/filler.png") center center/cover; }
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .flex.row {
+    flex-direction: row; }
+  .flex.wrap {
+    flex-wrap: wrap; }
+
+
+.highlight {
+  color: #FED136; }
+
+  #home .btn{
+    border-radius: 0;
+    border: 2px solid #fff;
+
+  }
+
+  #home .btn:hover{
+  border: 2px solid #FED136;
+  }
+
+
+  section {
+    padding: 70px 0 70px 0;
+    color: #616161;
+    line-height: 11pt;
+    position: relative; }
+    section .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 10px;
+      width: 100%;
+      box-sizing: border-box; }
+    section:nth-of-type(1) {
+      padding: 0 10px;
+      color: #fff;
+      height: calc(100vh + 53px); }
+      /* section:nth-of-type(1) .highlight {
+        font-family: 'Raleway-semibold'; } */
+      section:nth-of-type(1) .text {
+        margin: 0 0 20px 0;
+        font-size: 16pt;
+        line-height: 20pt;
+        z-index: 1;
+        pointer-events: none; }
+
+      section:nth-of-type(1) .button {
+        padding: 12px 40px 12px 15px;
+        position: relative;
+        margin-bottom: 53px; }
+        section:nth-of-type(1) .button .mdi {
+          transition: transform .3s;
+          position: absolute;
+          right: 15px;
+          top: 11px; }
+        section:nth-of-type(1) .button:hover .mdi {
+          transform: rotate(90deg); }
+
+    section {
+      line-height: 18pt;
+      padding: 100px 0 130px 0; }
+      section .container {
+        padding: 0 10px; }
+      section:nth-of-type(1) .text {
+        font-size: 32pt;
+        line-height: 36pt; }
+      section:nth-of-type(1) .button {
+        padding: 12px 50px 12px 20px; }
+        section:nth-of-type(1) .button .mdi {
+          top: 16px; }
+
+    .canvas {
+      background: #252934; }
+
+    .button {
+      font-size: 16pt; }
+
+    .flex.row-gt-sm {
+      flex-direction: row; }
+
+    .flex-50-gt-sm {
+      -webkit-flex: 1 1 50%;
+      -ms-flex: 1 1 50%;
+      flex: 1 1 50%;
+      max-width: 50%;
+      max-height: 100%;
+      box-sizing: border-box; }
