@@ -60,15 +60,14 @@
                 <a class="nav-link" href="#home">HOME</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about">ABOUT</a>
-              </li>
+                <a class="nav-link" href="#services">SERVICES</a>
+              </li>             
               <li class="nav-item">
                 <a class="nav-link" href="#portfolio">PORTFOLIO</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#services">SERVICES</a>
+                <a class="nav-link" href="#about">ABOUT</a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="#contact">CONTACT</a>
               </li>
@@ -83,114 +82,79 @@
       <div id="pt" class="canvas"></div>
       <div class="flex">
         <div class="text text-center">
-         <span class="highlight"><strong>Nahidul Islam</strong></span>.
+        <span class="highlight"><strong>{{ $main->title }}</strong></span>
             <br>
-            Your Next Web Designer & Developer.
+            {{ $main->sub_title }}
         </div>
-        <div class="btn btn-outline-warning button p-2">
-          <a href="#portfolio"><i class="fa fa-arrow-down mr-1"></i>View my work</a>
-        </div>
+        <div class="btn-group">
+        <div class="btn btn-outline-warning button mr-2"><a href="{{ url($main->resume) }}"><i class="fa fa-file mr-2"></i>Resume</a></div>
+          <div class="btn btn-outline-warning button"><a href="#portfolio"><i class="fa fa-image mr-2"></i>Projects</a></div>  
+        </div> 
       </div>
     </section>
   <!--Canvas Section-->
 
-  
-    <!-- About Section -->
-    <section id="about">
-      <div class="container py-5">
-        <div class="row">
-            <div class="col-lg-12">
-              <div class="mb-5 text-center">
-                <h2 class="section-heading wow fadeInLeft">About</h2>
-                <div class="line wow zoomIn" data-wow-delay="0.5s" data-wow-duration="1s"></div>
-                <h6 class="text-muted font-italic p-4 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s">I am extremely passionate about Web design & web Development.</h6>
-              </div>
-            </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 ">
-            <div class="text-center p-3">
-              <div class="btn btn-outline-warning button p-2">
-				<a href="https://drive.google.com/file/d/1rCFxdaSTM7scPEVnF2uoGTCsXr9-eSNV/view?usp=sharing" style="color:black;">Download Resume</a>
-			  </div>
-            </div>
-            <div class="our-team">
-              <div class="pic wow fadeInLeft" data-wow-delay="1s">
-                <img src="img\profile.jpg" alt="Developer Image">
-              </div>
-              <div class="team-content wow fadeInUp" data-wow-delay="1s">
-                <h3 class="title ">Nahidul Islam</h3>
-                <span class="post">Web Designer & Developer.</span>
-                <p class="p-2 text-dark">Hi! I have my own passion to Work & My performance speaks for my Level. I offer you the best quality with responsive design & most secure dynamic flatform.
-				I work with HTML, CSS, BOOTSTARP, PHP, JAVASCRIPT, JQUERY, AJAX & LARAVEL. </p>
-              </div>
-              <ul class="social">
-                <li><a href="https://facebook.com/nahidul.me/" class="fa fa-facebook"></a></li>
-                <li><a href="https://twitter.com/nahidul77/" class="fa fa-twitter"></a></li>
-                <li><a href="https://github.com/nahidul77/" class="fa fa-github"></a></li>
-                <li><a href="https://www.linkedin.com/in/nahidul77/" class="fa fa-linkedin"></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-8"><!--My Working Skill -->
-            <div class="text-center p-3">
-              <h4 class="font-weight-bold wow fadeInRight">TECHNICAL SKILLS</h4>
-            </div>
+  <!-- Services -->
+ <section id="services">
+  <div class="container py-5">
+    <div class="row mb-5">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading wow fadeInLeft">services</h2>
+      <div class="line wow zoomIn" data-wow-delay="0.5s" data-wow-duration="1s"></div>
+        <h6 class="text-muted font-italic p-4 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s">I provide end to end solutions, from building the design & develop of your website or web application.</h6>
+      </div>
+    </div>
 
-            <div class="skillbar clearfix wow fadeInRight" data-percent="90%" data-wow-delay="0.1s">
-            	<div class="skillbar-title" style="background: #FFC107;"><span>HTML5</span></div>
-            	<div class="skillbar-bar" style="background: #FFC107;"></div>
-            	<div class="skill-bar-percent">90%</div>
-            </div>
+    <div class="row text-center text-dark">
 
-            <div class="skillbar clearfix wow fadeInRight" data-percent="60%" data-wow-delay="0.2s">
-            	<div class="skillbar-title" style="background: #FFC107;"><span>CSS3</span></div>
-            	<div class="skillbar-bar" style="background: #FFC107;"></div>
-            	<div class="skill-bar-percent">60%</div>
-            </div>
-            <div class="skillbar clearfix wow fadeInRight" data-percent="80%" data-wow-delay="0.3s">
-            	<div class="skillbar-title" style="background: #FFC107;"><span>BOOTSTRAP</span></div>
-            	<div class="skillbar-bar" style="background: #FFC107;"></div>
-            	<div class="skill-bar-percent">80%</div>
-            </div>
-            <div class="skillbar clearfix wow fadeInRight" data-percent="50%" data-wow-delay="0.4s">
-            	<div class="skillbar-title" style="background: #FFC107;"><span>JAVASCRIPT</span></div>
-            	<div class="skillbar-bar" style="background: #FFC107;"></div>
-            	<div class="skill-bar-percent">50%</div>
-            </div>
-            <div class="skillbar clearfix wow fadeInRight" data-percent="75%" data-wow-delay="0.5s">
-            	<div class="skillbar-title" style="background: #FFC107;"><span>JQUERY</span></div>
-            	<div class="skillbar-bar" style="background: #FFC107;"></div>
-            	<div class="skill-bar-percent">75%</div>
-            </div>
-            <div class="skillbar clearfix wow fadeInRight" data-percent="85%" data-wow-delay="0.6s">
-            	<div class="skillbar-title" style="background: #FFC107;"><span>PHP</span></div>
-            	<div class="skillbar-bar" style="background: #FFC107;"></div>
-            	<div class="skill-bar-percent">85%</div>
-            </div>
-            <div class="skillbar clearfix wow fadeInRight" data-percent="70%" data-wow-delay="0.7s">
-            	<div class="skillbar-title" style="background: #FFC107;"><span>LARAVEL</span></div>
-            	<div class="skillbar-bar" style="background: #FFC107;"></div>
-            	<div class="skill-bar-percent">70%</div>
-            </div>
-            <div class="skillbar clearfix wow fadeInRight" data-percent="80%" data-wow-delay="0.8s">
-            	<div class="skillbar-title" style="background: #FFC107;"><span>MYSQL</span></div>
-            	<div class="skillbar-bar" style="background: #FFC107;"></div>
-            	<div class="skill-bar-percent">80%</div>
-            </div>
-            <div class="skillbar clearfix wow fadeInRight" data-percent="70%" data-wow-delay="0.9s">
-              <div class="skillbar-title" style="background: #FFC107;"><span>AJAX</span></div>
-              <div class="skillbar-bar" style="background: #FFC107;"></div>
-              <div class="skill-bar-percent">70%</div>
-            </div>
-            <div class="skillbar clearfix wow fadeInRight" data-percent="50%" data-wow-delay="1s">
-              <div class="skillbar-title" style="background: #FFC107;"><span>VUE JS</span></div>
-              <div class="skillbar-bar" style="background: #FFC107;"></div>
-              <div class="skill-bar-percent">50%</div>
-            </div>
-       </div>
-</div>
-</div></section>
+      <div class="col-lg-3 col-md-6 ">
+        <div class="card mb-2 wow fadeInLeft" data-wow-delay="1.8s">
+        <span class="fa-stack fa-5x align-self-center m-2">
+          <i class="fa fa-circle fa-stack-2x text-warning"></i>
+          <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+        </span>
+        <h3>Web Design</h3>
+        <p class="text-muted">Website Design the most important first impression of your brand identity through your website. I help you reach and potray the heart of your brand image through the design.</p>
+      </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="card mb-2  wow fadeInLeft" data-wow-delay="1.4s">
+        <span class="fa-stack fa-5x align-self-center m-2">
+          <i class="fa fa-circle fa-stack-2x text-warning"></i>
+          <i class="fa fa-code fa-stack-1x fa-inverse"></i>
+        </span>
+        <h3>Web Devlopment</h3>
+        <p class="text-muted">After wireframes and flow is set, I decide the platform and start the coding process. I Build code that are optimized and secured according to the industry standards.</p>
+      </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="card mb-2 wow fadeInLeft" data-wow-delay="0.8s">
+        <span class="fa-stack fa-5x align-self-center m-2">
+          <i class="fa fa-circle fa-stack-2x text-warning"></i>
+          <i class="fab fa-laravel fa-stack-1x fa-inverse"></i>
+        </span>
+        <h3>Web Application</h3>
+        <p class="text-muted">Web-Based Applications is a custom web software available to you all the time on the web. These applications can be custom-tailored and modified depending on the business.</p>
+      </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="card mb-2 wow fadeInLeft" data-wow-delay="0.4s">
+        <span class="fa-stack fa-5x align-self-center m-2">
+          <i class="fa fa-circle fa-stack-2x text-warning"></i>
+          <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+        </span>
+        <h3>E-Commerce</h3>
+        <p class="text-muted">I help you to start your business on Ecommerce Marketplaces like Amazon, Flipkart, Alibaba etc. I also help you register, upload and sell on these portal.</p>
+      </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+    
 
 
 <!-- Home Get Started -->
@@ -1015,71 +979,97 @@
  </div>
 </section>
 
-
-
-
-    <!-- Services -->
- <section id="services">
-    <div class="container py-5">
-      <div class="row mb-5">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading wow fadeInLeft">services</h2>
-        <div class="line wow zoomIn" data-wow-delay="0.5s" data-wow-duration="1s"></div>
-          <h6 class="text-muted font-italic p-4 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s">I provide end to end solutions, from building the design & develop of your website or web application.</h6>
+<!-- About Section -->
+<section id="about">
+  <div class="container py-5">
+    <div class="row">
+        <div class="col-lg-12">
+          <div class="mb-5 text-center">
+            <h2 class="section-heading wow fadeInLeft">About</h2>
+            <div class="line wow zoomIn" data-wow-delay="0.5s" data-wow-duration="1s"></div>
+            <h6 class="text-muted font-italic p-4 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s">I am extremely passionate about Web design & web Development.</h6>
+          </div>
         </div>
-      </div>
-
-      <div class="row text-center text-dark">
-
-        <div class="col-lg-3 col-md-6 ">
-          <div class="card mb-2 wow fadeInLeft" data-wow-delay="1.8s">
-          <span class="fa-stack fa-5x align-self-center m-2">
-            <i class="fa fa-circle fa-stack-2x text-warning"></i>
-            <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-          </span>
-          <h3>Web Design</h3>
-          <p class="text-muted">Website Design the most important first impression of your brand identity through your website. I help you reach and potray the heart of your brand image through the design.</p>
-        </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="card mb-2  wow fadeInLeft" data-wow-delay="1.4s">
-          <span class="fa-stack fa-5x align-self-center m-2">
-            <i class="fa fa-circle fa-stack-2x text-warning"></i>
-            <i class="fa fa-code fa-stack-1x fa-inverse"></i>
-          </span>
-          <h3>Web Devlopment</h3>
-          <p class="text-muted">After wireframes and flow is set, I decide the platform and start the coding process. I Build code that are optimized and secured according to the industry standards.</p>
-        </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="card mb-2 wow fadeInLeft" data-wow-delay="0.8s">
-          <span class="fa-stack fa-5x align-self-center m-2">
-            <i class="fa fa-circle fa-stack-2x text-warning"></i>
-            <i class="fab fa-laravel fa-stack-1x fa-inverse"></i>
-          </span>
-          <h3>Web Application</h3>
-          <p class="text-muted">Web-Based Applications is a custom web software available to you all the time on the web. These applications can be custom-tailored and modified depending on the business.</p>
-        </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="card mb-2 wow fadeInLeft" data-wow-delay="0.4s">
-          <span class="fa-stack fa-5x align-self-center m-2">
-            <i class="fa fa-circle fa-stack-2x text-warning"></i>
-            <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
-          </span>
-          <h3>E-Commerce</h3>
-          <p class="text-muted">I help you to start your business on Ecommerce Marketplaces like Amazon, Flipkart, Alibaba etc. I also help you register, upload and sell on these portal.</p>
-        </div>
-        </div>
-
-      </div>
     </div>
-  </section>
+    <div class="row">
+      <div class="col-md-4 ">
+        <div class="our-team">
+          <div class="pic wow fadeInLeft" data-wow-delay="1s">
+            <img src="img\profile.jpg" alt="Developer Image">
+          </div>
+          <div class="team-content wow fadeInUp" data-wow-delay="1s">
+            <h3 class="title ">Nahidul Islam</h3>
+            <span class="post">Web Designer & Developer.</span>
+            <p class="p-2 text-dark">Hi! I have my own passion to Work & My performance speaks for my Level. I offer you the best quality with responsive design & most secure dynamic flatform.
+    I work with HTML, CSS, BOOTSTARP, PHP, JAVASCRIPT, JQUERY, AJAX & LARAVEL. </p>
+          </div>
+          <ul class="social">
+            <li><a href="https://facebook.com/nahidul.me/" class="fa fa-facebook"></a></li>
+            <li><a href="https://twitter.com/nahidul77/" class="fa fa-twitter"></a></li>
+            <li><a href="https://github.com/nahidul77/" class="fa fa-github"></a></li>
+            <li><a href="https://www.linkedin.com/in/nahidul77/" class="fa fa-linkedin"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-8"><!--My Working Skill -->
+        <div class="text-center p-3">
+          <h4 class="font-weight-bold wow fadeInRight">TECHNICAL SKILLS</h4>
+        </div>
 
+        <div class="skillbar clearfix wow fadeInRight" data-percent="90%" data-wow-delay="0.1s">
+          <div class="skillbar-title" style="background: #FFC107;"><span>HTML5</span></div>
+          <div class="skillbar-bar" style="background: #FFC107;"></div>
+          <div class="skill-bar-percent">90%</div>
+        </div>
 
+        <div class="skillbar clearfix wow fadeInRight" data-percent="60%" data-wow-delay="0.2s">
+          <div class="skillbar-title" style="background: #FFC107;"><span>CSS3</span></div>
+          <div class="skillbar-bar" style="background: #FFC107;"></div>
+          <div class="skill-bar-percent">60%</div>
+        </div>
+        <div class="skillbar clearfix wow fadeInRight" data-percent="80%" data-wow-delay="0.3s">
+          <div class="skillbar-title" style="background: #FFC107;"><span>BOOTSTRAP</span></div>
+          <div class="skillbar-bar" style="background: #FFC107;"></div>
+          <div class="skill-bar-percent">80%</div>
+        </div>
+        <div class="skillbar clearfix wow fadeInRight" data-percent="50%" data-wow-delay="0.4s">
+          <div class="skillbar-title" style="background: #FFC107;"><span>JAVASCRIPT</span></div>
+          <div class="skillbar-bar" style="background: #FFC107;"></div>
+          <div class="skill-bar-percent">50%</div>
+        </div>
+        <div class="skillbar clearfix wow fadeInRight" data-percent="75%" data-wow-delay="0.5s">
+          <div class="skillbar-title" style="background: #FFC107;"><span>JQUERY</span></div>
+          <div class="skillbar-bar" style="background: #FFC107;"></div>
+          <div class="skill-bar-percent">75%</div>
+        </div>
+        <div class="skillbar clearfix wow fadeInRight" data-percent="85%" data-wow-delay="0.6s">
+          <div class="skillbar-title" style="background: #FFC107;"><span>PHP</span></div>
+          <div class="skillbar-bar" style="background: #FFC107;"></div>
+          <div class="skill-bar-percent">85%</div>
+        </div>
+        <div class="skillbar clearfix wow fadeInRight" data-percent="70%" data-wow-delay="0.7s">
+          <div class="skillbar-title" style="background: #FFC107;"><span>LARAVEL</span></div>
+          <div class="skillbar-bar" style="background: #FFC107;"></div>
+          <div class="skill-bar-percent">70%</div>
+        </div>
+        <div class="skillbar clearfix wow fadeInRight" data-percent="80%" data-wow-delay="0.8s">
+          <div class="skillbar-title" style="background: #FFC107;"><span>MYSQL</span></div>
+          <div class="skillbar-bar" style="background: #FFC107;"></div>
+          <div class="skill-bar-percent">80%</div>
+        </div>
+        <div class="skillbar clearfix wow fadeInRight" data-percent="70%" data-wow-delay="0.9s">
+          <div class="skillbar-title" style="background: #FFC107;"><span>AJAX</span></div>
+          <div class="skillbar-bar" style="background: #FFC107;"></div>
+          <div class="skill-bar-percent">70%</div>
+        </div>
+        <div class="skillbar clearfix wow fadeInRight" data-percent="50%" data-wow-delay="1s">
+          <div class="skillbar-title" style="background: #FFC107;"><span>VUE JS</span></div>
+          <div class="skillbar-bar" style="background: #FFC107;"></div>
+          <div class="skill-bar-percent">50%</div>
+        </div>
+   </div>
+</div>
+</div></section>
 
 
 <!--CONTACT SECTION-->
