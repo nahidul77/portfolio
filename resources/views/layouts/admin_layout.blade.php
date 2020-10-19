@@ -7,7 +7,13 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Dashboard</title>
-    <link href="{{asset('css/dashboard_styles.css')}}" rel="stylesheet" />
+        <link href="{{asset('css/dashboard_styles.css')}}" rel="stylesheet" />
+        <link href="{{asset('css/style.css')}}" rel="stylesheet">
+        <link href="{{asset('css/style-responsive.css')}}" rel="stylesheet">
+    <!--dynamic table-->
+        <link href="{{asset('css/demo_page.css')}}" rel="stylesheet" />
+        <link href="{{asset('css/demo_table.css')}}" rel="stylesheet" />
+        <link rel="stylesheet" href="{{asset('css/DT_bootstrap.css')}}" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -58,17 +64,32 @@
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
                                 <a class="nav-link" href="{{ route('admin.services.create') }}">Create</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">List</a>
+                                <a class="nav-link" href="{{ route('admin.services.list') }}">List</a>
                                 </nav>
                             </div>
-                            <a class="nav-link" href="">
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts2" aria-expanded="false" aria-controls="collapseLayouts2">
                                 <div class="sb-nav-link-icon"><i class="fas fa-images"></i></div>
                                 Portfolio
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
-                            <a class="nav-link" href="">
+                            <div class="collapse" id="collapseLayouts2" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="{{ route('admin.portfolio.create') }}">Create</a>
+                                <a class="nav-link" href="{{ route('admin.portfolio.list') }}">List</a>
+                                </nav>
+                            </div>
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts2" aria-expanded="false" aria-controls="collapseLayouts2">
                                 <div class="sb-nav-link-icon"><i class="fas fa-user"></i></div>
                                 About
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
+                            <div class="collapse" id="collapseLayouts2" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="{{ route('admin.about.profile') }}">Manage Profile</a>
+                                {{-- <a class="nav-link" href="{{ route('admin.about.create') }}">Add Skill</a>
+                                <a class="nav-link" href="{{ route('admin.about.list') }}">Manage Skill</a> --}}
+                                </nav>
+                            </div>
                             <a class="nav-link" href="">
                                 <div class="sb-nav-link-icon"><i class="fas fa-envelope"></i></div>
                                 Contact
@@ -101,6 +122,20 @@
         </div>
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-    <script src="{{asset('js/dashboard_scripts.js')}}"></script>
+        <script src="{{asset('js/dashboard_scripts.js')}}"></script>
+    <!-- Placed js at the end of the document so the pages load faster -->
+        <script src="{{asset('js/jquery-1.10.2.min.js')}}"></script>
+        <script src="{{asset('js/jquery-ui-1.9.2.custom.min.js')}}"></script>
+        <script src="{{asset('js/jquery-migrate-1.2.1.min.js')}}"></script>
+        <script src="{{asset('js/bootstrap.min.js')}}"></script>
+        <script src="{{asset('js/modernizr.min.js')}}"></script>
+        <script src="{{asset('js/jquery.nicescroll.js')}}"></script>
+        <!--dynamic table-->
+        <script type="text/javascript" language="javascript" src="{{asset('js/jquery.dataTables.js')}}"></script>
+        <script type="text/javascript" src="{{asset('js/DT_bootstrap.js')}}"></script>
+        <!--dynamic table initialization -->
+        <script src="{{asset('js/dynamic_table_init.js')}}"></script>
+        <!--common scripts for all pages-->
+        <script src="{{asset('js/scripts.js')}}"></script>
     </body>
 </html>

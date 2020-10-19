@@ -14,8 +14,7 @@ class MainPagesController extends Controller
      */
     public function index()
     {
-        $main = Main::first();
-        return view('pages.main', ['main'=>$main]);
+        return view('pages.main');
     }
 
     
@@ -38,16 +37,11 @@ class MainPagesController extends Controller
         $main->title = $request->title;
         $main->sub_title = $request->sub_title;
 
-        if($request->file('bg_img')){
-            $image = $request->file('bg_img');
-            $image->storeAs('public/img', 'bg_img.'.$image->getClientOriginalExtension());
-            $main->bg_img = 'storage/img/bg_img.'.$image->getClientOriginalExtension();
-        }
 
         if($request->file('resume')){
             $file = $request->file('resume');
-            $file->storeAs('public/pdf', 'resume_nahidul_islam.'.$file->getClientOriginalExtension());
-            $main->resume = 'storage/pdf/resume_nahidul_islam.'.$file->getClientOriginalExtension();
+            $file->storeAs('public/pdf', 'resume.'.$file->getClientOriginalExtension());
+            $main->resume = 'storage/pdf/resume.'.$file->getClientOriginalExtension();
         }
 
         $main->save();
