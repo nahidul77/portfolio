@@ -16,19 +16,13 @@ class CreateProfilesTable extends Migration
         Schema::create('profiles', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('title');
-            $table->string('sub_title');
-            $table->longText('description');
-            $table->string('fb_link');
-            $table->string('tw_link');
-            $table->string('in_link');
-            $table->string('git_link');
-            $table->string('service_head');
-            $table->string('portfolio_head');
-            $table->string('about_head');
-            $table->string('resume');
-            $table->string('profile_img');
-            $table->string('fav_img');
+            $table->string('title')->nullable();
+            $table->longText('description')->nullable();
+            $table->string('fb_link')->nullable();
+            $table->string('tw_link')->nullable();
+            $table->string('in_link')->nullable();
+            $table->string('git_link')->nullable();
+            $table->string('profile_img')->nullable();
             $table->timestamps();
         });
     }

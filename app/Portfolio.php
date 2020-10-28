@@ -8,12 +8,12 @@ class Portfolio extends Model
 {
     protected $fillable = [
         'title',
+        'site_link',
         'description',
-        'view_site',
-        'pa_img',
-        'pb_img',
-        'pc_img',
-        'pd_img',
-        'pe_img',
+        'img_a',
+        'img_b',
+        'img_c',
+        'img_d',
+        'img_e'
     ];
 }
