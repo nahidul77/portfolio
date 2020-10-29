@@ -9,6 +9,12 @@ use Intervention\Image\ImageManagerStatic as Image;
 
 class PortfolioPageController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
+    
     /**
      * Display a listing of the resource.
      *

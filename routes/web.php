@@ -16,7 +16,7 @@ Route::get('/', 'PagesController@index')->name('index');
 
 Route::prefix('admin')->group(function(){
 
-Route::get('/dashboard', 'PagesController@dashboard')->name('admin.dashboard');
+Route::get('/dashboard', 'DashboardController@dashboard')->name('admin.dashboard');
 //site routes
 Route::get('/site', 'SitePageController@index')->name('admin.site');
 Route::post('/site/store', 'SitePageController@store')->name('admin.site.store');
@@ -56,6 +56,15 @@ Route::post('/contact', 'ContactFormController@store')->name('contact.store');
 
 
 
-Auth::routes();
+Auth::routes([
+    'login'    => true, 
+    'logout'   => true, 
+    'register' => true,
+    'reset'    => true,   // for resetting passwords
+    'confirm'  => true,  // for additional password confirmations
+    'verify'   => true,  // for email verification
+]
+);
 
 Route::get('/home', 'HomeController@index')->name('home');
+

@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class ContactPageController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
     public function index(){
         $contact = Contact::first();
         return view('back-end.pages.contact', ['contact'=>$contact]);

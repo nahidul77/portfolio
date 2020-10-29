@@ -16,7 +16,7 @@
         <div class="left-side-inner">
 
             <!-- visible to small devices only -->
-            <div class="visible-xs hidden-sm hidden-md hidden-lg">
+            {{-- <div class="visible-xs hidden-sm hidden-md hidden-lg">
                 <div class="media logged-user">
                     <img alt="" src="img/photos/user-avatar.png" class="media-object">
                     <div class="media-body">
@@ -31,7 +31,7 @@
                     <li><a href="#"><i class="fa fa-cog"></i> <span>Settings</span></a></li>
                     <li><a href="#"><i class="fa fa-sign-out"></i> <span>Sign Out</span></a></li>
                 </ul>
-            </div>
+            </div> --}}
 
         <!--sidebar nav start-->
         <ul class="nav nav-pills nav-stacked custom-nav">
@@ -66,6 +66,17 @@
 
             <!--multi level menu end-->
 
+            <li class="menu-list">
+                <a class="nav-link" href="{{ route('logout') }}"
+                    onclick="event.preventDefault();
+                    document.getElementById('logout-form').submit();"><i class="fa fa-power-off"></i>
+                    {{ __('Logout') }}
+                </a>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                    @csrf
+                </form>
+            </li>
+
         </ul>
 
     </div>
@@ -83,7 +94,7 @@
     <!--toggle button end-->
 
     <!--notification menu start -->
-    <div class="menu-right">
+    {{-- <div class="menu-right">
         <ul class="notification-menu">
             <li>
                 <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
@@ -99,7 +110,8 @@
             </li>
 
         </ul>
-    </div>
+    </div> --}}
+
     <!--notification menu end -->
 
     </div>
