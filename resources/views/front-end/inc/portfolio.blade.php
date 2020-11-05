@@ -8,10 +8,10 @@
           <h6 class="text-muted font-italic p-4 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s">Check out my latest web Design & web based application projects.</h6>
         </div>
       </div>
-  
       <div class="row portfolio-image">
+      
         @if(isset($portfolios))
-        @foreach($portfolios as $portfolio)
+        @foreach($portfolios as $portfolio)   
               <div class="col-lg-3 col-md-6 mix php wow fadeInLeft" data-wow-delay="1.8s">
                 <div class="card mb-4">
                     <div class="hovereffect">
@@ -25,7 +25,7 @@
                 </div>
               </div>
   
-  <!-- Modal -->
+      <!-- Modal -->
                 <div class="modal" id="ModalCarousel{{$portfolio->id}}" tabindex="-1" role="dialog" aria-labelledby="ModalCarouselLabel">
                   <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
@@ -101,8 +101,9 @@
                     </div>
                   </div>
               </div>
-          </div>
-    
+          </div> 
+        </div>
+      
     <!-- Modal -->
         @endforeach
         @else
@@ -119,7 +120,7 @@
           </div>
         </div>
       @endif
-      </div>
+    </div>
     </div>
   </section>
   
