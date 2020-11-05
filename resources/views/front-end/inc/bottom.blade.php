@@ -4,10 +4,10 @@
       <div class="row">
         <div class="col-lg-12 col-sm-12 col-md-12 mt-3">
           <ul class="list-unstyled list-inline social text-center">
-            <li class="list-inline-item"><a href="https://facebook.com/nahidul.me/" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
-            <li class="list-inline-item"><a href="https://twitter.com/nahidul77/" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
-            <li class="list-inline-item"><a href="https://github.com/nahidul77/" target="_blank"><i class="fa fa-github-square"></i></a></li>
-            <li class="list-inline-item"><a href="https://linkedin.com/in/nahidul77/" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+            <li class="list-inline-item"><a href="{{isset($profile->fb_link)? url($profile->fb_link) : '#'}}" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+            <li class="list-inline-item"><a href="{{isset($profile->tw_link)? url($profile->tw_link) : '#'}}" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+            <li class="list-inline-item"><a href="{{isset($profile->git_link)? url($profile->git_link) : '#'}}" target="_blank"><i class="fa fa-github-square"></i></a></li>
+            <li class="list-inline-item"><a href="{{isset($profile->in_link)? url($profile->in_link) : '#'}}" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
           </ul>
         </div>
         
