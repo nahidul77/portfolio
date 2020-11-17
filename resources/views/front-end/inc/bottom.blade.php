@@ -22,18 +22,17 @@
   </section>
   <!--END Footer Section -->
   
-  
-  
-    <script src="js\jquery.min.js"></script>
-    <script src="js\popper.min.js"></script>
-    <script src="js\bootstrap.min.js"></script>
-    <script src="js\uikit.min.js"></script>
-    <script src="js\navbar-fixed.js"></script>
-    <script src="js\canvas.js"></script>
-    <script src="js\mixitup.min.js"></script>
-    <script src="js\main.js"></script>
-    <script src="js\jquery.nicescroll.min.js"></script>
-    <script src="js\wow.min.js"></script>
+
+  <script src="js\popper.min.js"></script>
+  <script src="js\bootstrap.min.js"></script>
+  <script src="js\uikit.min.js"></script>
+  <script src="js\navbar-fixed.js"></script>
+  <script src="js\canvas.js"></script>
+  <script src="js\mixitup.min.js"></script>
+  <script src="js\main.js"></script>
+  <script src="js\jquery.nicescroll.min.js"></script>
+  <script src="js\wow.min.js"></script>
+  <script>new WOW().init();</script>
   
     <script>new WOW().init();</script>
     <script>

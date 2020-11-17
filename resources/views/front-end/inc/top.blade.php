@@ -29,9 +29,17 @@
   <link rel="stylesheet" href="css\navbar-fixed.css">
   <link rel="stylesheet" href="css\style.css">
   <link rel="stylesheet" href="css\custom.css">
+  <link rel="stylesheet" href="css\preloader.css">
   <script type="text/javascript" src="js\pt.min.js"></script>
+  <script src="js\jquery.min.js"></script>
+  <script src="js\preloader.js"></script>
   <title>Nahidul Islam</title>
-
-  
 </head>
+<body class="" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <div class="pk-loader">
+    <svg id="triangle" viewBox="-3 -4 39 39">
+      <polygon fill="#252934" stroke="#FED136" stroke-width="1" points="16,0 32,32 0,32"></polygon>
+    </svg>
+    <div class="loader-text">Please wait...</div>
+  </div>
 

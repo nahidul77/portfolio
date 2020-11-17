@@ -1,0 +1,46 @@
+.pk-loader {
+    background: #252934;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+  }
+  .pk-loader svg {
+    bottom: 0;
+    height: 70px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 70px;
+  }
+  .pk-loader svg polygon {
+    stroke-dasharray: 17;
+    -webkit-animation: dash 2.5s cubic-bezier(0.35, 0.04, 0.63, 0.95) infinite;
+    animation: dash 2.5s cubic-bezier(0.35, 0.04, 0.63, 0.95) infinite;
+  }
+  .loader-text {
+    color: #FED136;
+    left: 0;
+    letter-spacing: 4px;
+    margin-top: 50px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @-webkit-keyframes dash {
+    to {
+      stroke-dashoffset: 136;
+    }
+  }
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 136;
+    }
+  }
+  
